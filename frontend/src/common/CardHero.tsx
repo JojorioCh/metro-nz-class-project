@@ -78,7 +78,7 @@ export default function CardHero({ cardData, setCardData }: CardHeroProps) {
           cardData.map((card, index) => (
             <Card
               key={index}
-              className={`cardsList ${index >= visibleCards ? 'hidden' : ''}`}
+              className={`cardsContainer__List ${index >= visibleCards ? 'cardsContainer__Hidden' : ''}`}
             >
               <CardActionArea>
                 <CardMedia
@@ -136,7 +136,7 @@ export default function CardHero({ cardData, setCardData }: CardHeroProps) {
             </Card>
           ))}
       </div>
-      <div className="showMore">
+      <div className="cardsContainer__showMore">
         <ButtonHero
           onClick={handleShowMore}
           backgroundColor=" #E4353C"

@@ -1,6 +1,6 @@
 import crypto from 'crypto';
 
-const secret = process.env.C_SECRET;
+const secret = 'JOSEPH-ELENA-REST-API';
 
 export const random = () => crypto.randomBytes(128).toString('base64');
 export const authentication = (salt: string, password: string) => {
@@ -8,5 +8,4 @@ export const authentication = (salt: string, password: string) => {
     .createHmac('sha256', [salt, password].join('/'))
     .update(secret)
     .digest('hex');
-
 };

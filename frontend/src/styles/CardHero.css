@@ -6,22 +6,22 @@
   padding: 0.3% 1%;
 }
 
-.cardsList {
+.cardsContainer__List {
+  position: relative;
   max-width: 300;
   border-radius: 4;
   margin-top: 1.5rem;
 }
 
-.hidden {
+.cardsContainer__Hidden {
   display: none;
 }
 
-.showMore {
+.cardsContainer__showMore {
   display: flex;
   justify-content: center;
   margin-top: 1.5rem;
 }
-
 
 /* Media queries for responsiveness */
 
@@ -30,11 +30,11 @@
     display: flex;
     flex-direction: column;
   }
-  .cardsList {
+  .cardsContainer__List {
     display: flex;
     flex-direction: column;
   }
-  .hidden {
+  .cardsContainer__Hidden {
     display: flex;
     flex-direction: column;
   }

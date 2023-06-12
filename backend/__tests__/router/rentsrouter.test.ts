@@ -1,5 +1,5 @@
 import request from "supertest";
-import router from "../../src/router/userrouter";
+import router from "../../src/router/usersrouter";
 
 describe("Test userrouter.ts", () => {
     test("Catch-all route", async () => {

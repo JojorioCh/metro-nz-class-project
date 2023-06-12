@@ -1,7 +1,8 @@
-.s3Container {
+.hcpContainer {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+
   justify-content: center;
   justify-content: space-evenly;
   margin: 6.25rem 7.5rem;

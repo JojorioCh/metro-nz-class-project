@@ -21,7 +21,7 @@ const HomeCardPeople: React.FC<HomeCardPeopleProps> = ({
       {/* <header className="homePCardHeader"> */}
 
       <section className="homePCardHeaderStarsContainer">
-        <div className="homePCardHeaderStars">
+        <div className="homePCardContainerHeaderStars">
           <img src={star} alt="star" />
           <img src={star} alt="star" />
           <img src={star} alt="star" />
