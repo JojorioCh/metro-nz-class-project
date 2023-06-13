@@ -6,7 +6,7 @@ import { people } from '../../srcAssets/card-map-data/Section3MapData';
 const HomeSection3 = () => {
   return (
     <>
-      <div className="hcpContainer">
+      <div className="s3Container">
         {people.map((person) => (
           <HomeCardPeople
             name={person.name}

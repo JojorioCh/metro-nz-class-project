@@ -20,8 +20,8 @@ const HomeCardPeople: React.FC<HomeCardPeopleProps> = ({
     <div className="homePCardContainer">
       {/* <header className="homePCardHeader"> */}
 
-      <section className="homePCardHeaderStarsContainer">
-        <div className="homePCardContainerHeaderStars">
+      <section className="homePCardsContainer__rating">
+        <div className="homePCardsContainer__rating--starIcon">
           <img src={star} alt="star" />
           <img src={star} alt="star" />
           <img src={star} alt="star" />
@@ -30,8 +30,8 @@ const HomeCardPeople: React.FC<HomeCardPeopleProps> = ({
         </div>
       </section>
 
-      <section className="homePCardImgTitle">
-        <div className="homePCardImg">
+      <section className="homePCardContainer__profilePic">
+        <div className="homePCardContainer__profilePic--photo">
           <img src={image} alt="person" />
         </div>
         <div className="homePCardTitle">
@@ -42,9 +42,13 @@ const HomeCardPeople: React.FC<HomeCardPeopleProps> = ({
 
       {/* </header> */}
 
-      <img className="quote-img" src={quote} alt="quote" />
+      <img
+        className="homePCardContainer__quote--graph"
+        src={quote}
+        alt="quote"
+      />
 
-      <p className="hpcText">{text}</p>
+      <p className="homePCardContainer__text">{text}</p>
     </div>
   );
 };

@@ -23,7 +23,6 @@ const SearchPanel = () => {
   const [rmin, setRmin] = useState(0);
   const [rmax, setRmax] = useState(0);
   const [bed, setBed] = useState(0);
-  const [propertytype, setPropertytype] = useState('');
 
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -40,15 +39,12 @@ const SearchPanel = () => {
     formData.rentmax = rmax;
     formData.bedrooms = bed;
     console.log(formData);
-    // Send the form data to the backend server using Axios
     axios
       .post('http://localhost:8080/rents/results', formData)
       .then((response) => {
-        // Handle the response from the backend server
         console.log(response.data);
       })
       .catch((error) => {
-        // Handle any errors
         console.error(error);
       });
   };

@@ -37,16 +37,13 @@ const SearchPanel = ({ cardData, setCardData }: SearchPanelProps) => {
     formData.rentmin = rmin;
     formData.rentmax = rmax;
     formData.bedrooms = bed;
-    // Send the form data to the backend server using Axios
     axios
       .get('http://localhost:8080/rents/results', { params: formData })
       .then((response) => {
-        // Handle the response from the backend server
         console.log(response.data);
         setCardData(response.data);
       })
       .catch((error) => {
-        // Handle any errors
         console.error(error);
       });
   };

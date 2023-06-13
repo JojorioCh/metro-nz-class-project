@@ -1,24 +1,10 @@
-.hcpContainer {
+.s3Container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-
   justify-content: center;
   justify-content: space-evenly;
   margin: 6.25rem 7.5rem;
-}
-.hpcText {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  justify-content: space-between;
-  text-align: left;
-  margin: 0px 0px;
-  padding: 0px 18%;
-}
-.hpcText {
-  padding: 5% 20%;
 }
 
 .homePCardContainer {
@@ -34,35 +20,53 @@
   box-shadow: -4px 4px 4px 1px rgba(0, 0, 0, 0.2);
   position: relative;
 }
-.homePCardHeaderStarsContainer {
+
+.homePCardsContainer__rating {
   width: 100%;
 }
 
-.homePCardHeaderStars {
+.homePCardsContainer__rating--starIcon {
   display: flex;
   flex-direction: row;
   justify-content: flex-end !important;
   margin-left: auto;
   margin-top: 1%;
 }
-.homePCardImgTitle {
+
+.homePCardContainer__profilePic {
   display: flex;
   flex-direction: row;
 }
 
-.homePCardImgTitle img {
+.homePCardContainer__profilePic--photo {
   width: 60%;
   height: auto;
   border-radius: 50px;
-  margin-left: 35%;
-  margin-right: -10px;
+  margin-left: 20%;
+  margin-right: 10px;
 }
 
-.quote-img {
+.homePCardContainer__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  text-align: left;
+  margin: 0px 0px;
+  padding: 0px 18%;
+}
+
+.homePCardContainer__text {
+  padding: 5% 20%;
+}
+
+.homePCardContainer__quote--graph {
   position: absolute;
   top: 32%;
   left: 12%;
 }
+
 hr {
   border: none;
   background-color: var(--textMainAlpha);
@@ -72,7 +76,7 @@ hr {
 }
 
 @media screen and (max-width: 800px) {
-  .hcpContainer {
+  .s3Container {
     display: grid;
     justify-items: center;
     grid-template-columns: repeat(1, 1fr);
