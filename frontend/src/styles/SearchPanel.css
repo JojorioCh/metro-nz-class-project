@@ -49,7 +49,11 @@
   border: none;
 }
 
-.spWhiteSearch,
+.spWhiteSearch {
+  display: flex;
+  flex-direction: row;
+}
+
 .spGraySearch {
   display: flex;
   flex-direction: row;
